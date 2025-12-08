@@ -1,0 +1,82 @@
+        /* Custom scrollbar */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        .dark .custom-scrollbar::-webkit-scrollbar-track {
+            background: #374151;
+        }
+        .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #6b7280;
+        }
+        .dark .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #9ca3af;
+        }
+        
+        /* Custom slider styles */
+        input[type="range"] {
+            -webkit-appearance: none;
+            height: 8px;
+            border-radius: 4px;
+            background: #e5e7eb;
+            outline: none;
+        }
+        .dark input[type="range"] {
+            background: #4b5563;
+        }
+        
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        /* Pollutant-specific slider colors */
+        .pm25-slider::-webkit-slider-thumb {
+            background: #ef4444;
+        }
+        .pm10-slider::-webkit-slider-thumb {
+            background: #f97316;
+        }
+        .no2-slider::-webkit-slider-thumb {
+            background: #0ea5e9;
+        }
+        .so2-slider::-webkit-slider-thumb {
+            background: #8b5cf6;
+        }
+        .o3-slider::-webkit-slider-thumb {
+            background: #10b981;
+        }
+        .co-slider::-webkit-slider-thumb {
+            background: #eab308;
+        }
+        
+        /* AQI category backgrounds */
+        .aqi-good-bg { background-color: rgba(0, 228, 0, 0.1); }
+        .aqi-moderate-bg { background-color: rgba(255, 255, 0, 0.1); }
+        .aqi-sensitive-bg { background-color: rgba(255, 126, 0, 0.1); }
+        .aqi-unhealthy-bg { background-color: rgba(255, 0, 0, 0.1); }
+        .aqi-very-unhealthy-bg { background-color: rgba(143, 63, 151, 0.1); }
+        .aqi-hazardous-bg { background-color: rgba(126, 0, 35, 0.1); }
+        
+        .dark .aqi-good-bg { background-color: rgba(0, 228, 0, 0.2); }
+        .dark .aqi-moderate-bg { background-color: rgba(255, 255, 0, 0.2); }
+        .dark .aqi-sensitive-bg { background-color: rgba(255, 126, 0, 0.2); }
+        .dark .aqi-unhealthy-bg { background-color: rgba(255, 0, 0, 0.2); }
+        .dark .aqi-very-unhealthy-bg { background-color: rgba(143, 63, 151, 0.2); }
+        .dark .aqi-hazardous-bg { background-color: rgba(126, 0, 35, 0.2); }
